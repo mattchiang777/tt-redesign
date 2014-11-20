@@ -1,0 +1,354 @@
+/* Layout classes
+======================================= */
+
+/* Page elements
+======================================= */
+
+body {
+	margin: 0;
+	-webkit-font-smoothing: antialiased; /* what does this do? */
+	text-rendering:  optimizeLegibility;
+}
+
+a, a:visited, a:hover {
+	color: transparent;
+	text-decoration: none;
+}
+
+/* Structure classes
+======================================= */
+
+.content-section {
+	width: 960px;
+	/* height: 100%; */
+	margin: 0 auto;
+	/*background-color: red;*/
+}
+
+.block {
+	width: 100%;
+	height: 400px;
+}
+
+.square {
+	width: 300px;
+	float: left;
+	margin-right: 30px;
+}
+
+.menu-item {
+	display: inline;
+	padding-right: 25px;
+}
+
+.button {
+	/*width: 80px;
+	height: 0px;*/
+	background-color: transparent;
+}
+
+.social-media-icon {
+	width: 25px;
+	height: 25px;
+	background-color: black;
+	float: left;
+	margin-right: 20px;
+	margin-left: 200px;
+}
+
+/* Styling classes
+======================================= */
+
+@font-face {
+	font-family: "Charter";
+	src: url("../assets/CharterRegular.otf");
+}
+
+.serif-text {
+	font-family: "Charter", serif;
+	text-align: center;
+	font-size: 30px;
+}
+
+.red {
+	background-color: #771f24;
+}
+
+.sticky {
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 0;
+	z-index: 100;
+	border-top: 0;
+}
+
+.image {
+	background-image: url("../img/placeholder.jpg");
+	filter: brightness(50%);
+	-webkit-filter: brightness(50%);
+}
+
+.image-text {
+	font-family: "Lato", sans-serif;
+	color: #ffffff;
+	text-align: center;
+}
+
+.image-header {
+	font-size: 75px; /* hayden uses 86 px */
+	padding-top: calc(200px - (90px + 55px) / 2); /* Center the text in the image */
+}
+
+.image-header-with-button {
+	font-size: 75px;
+	padding-top: calc(200px - (90px + 55px + 48px) / 2); /* Center the text in the image */
+}
+
+.image-subheader {
+	font-size: 25px; /* hayden uses 28 px */
+	padding-top: 10px; /* hayden uses 20 px */
+	padding-bottom: 15px;
+	text-transform: uppercase;
+}
+
+.body-text {
+	font-family: "Lato", sans-serif;
+	color: #000000;
+	text-align: center;
+}
+
+/* Header
+======================================= */
+
+#header {
+	width: 100%;
+	height: 350px;
+	background-color: #ffffff;
+}
+
+#header-text {
+	margin-top: 30px;
+}
+
+/* Navigation bar 
+======================================= */
+
+#navbar {
+	width: 100%;
+	height: 110px;
+	background-color: #ecebeb;
+	font-family: "Charter";
+	font-size: 15px;
+	box-shadow: 0px -5px 75px -5px black;
+	-webkit-box-shadow: 0px -5px 75px -5px black;
+	-moz-box-shadow: 0px -5px 75px -5px black;
+}
+
+#strip {
+	width: 100%;
+	height: 10px;
+}
+
+#logo {
+	width: 100px;
+	height: 100px;
+	background-color: black;
+	float: left;
+}
+
+#title {
+	float: left;
+	padding: 10px 10px;
+}
+
+#thetatau {
+	font-size: 35px;
+	margin-top: 2px;
+	margin-bottom: -8px;
+}
+
+#epsilon {
+	font-size: 25px;
+	margin-left: 3px;
+}
+
+#navmenu {
+	font-family: "Lato", sans-serif;
+	float: right;
+	position: relative;
+	top: 50px; /* Not 50% of its wrapper because the height of the wrapper is 110px */
+	transform: translate(0%, -50%); /*Moves the element down 50% of its height, need webkit */
+}
+
+#navmenu a, 
+#navmenu a:hover,
+#navmenu a:visited {
+	color: #000000;
+}
+
+#navmenu a:hover {
+	/*color: #771f24;*/
+	border-bottom: 2px solid #771f24;
+}
+
+#members-menu {
+	padding-right: 0px;
+}
+
+/* Dropdown menu
+======================================= */
+
+#dropdown-menu {
+	font-family: "Lato", sans-serif;
+	float: right;
+	position: relative;
+	top: 50px; /* Not 50% of its wrapper because the height of the wrapper is 110px */
+	transform: translate(0%, -50%); /* Moves the element down 50% of its height, need webkit */
+	z-index: 1;
+}
+
+ul {
+	/* text-align: left; */
+	/* display: inline; */
+	/* margin: 0; */
+	/* padding: 15px 4px 17px 0px; */
+	/* list-style: none; */
+}
+
+ul li {
+	font: bold;
+	display: inline-block;
+	margin-right: -4px;
+	position: relative;
+	padding: calc((100px - 18px) / 2) 20px;
+	/* background: #fff; */
+	cursor: pointer;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+ul li:hover {
+	background: #771f24;
+	color: #fff;
+}
+
+ul li ul {
+	padding: 0px;
+	position: absolute;
+	top: 100px;
+	left: 0;
+	width: 150px;
+	-webkit-box-shadow: none;
+  	-moz-box-shadow: none;
+  	box-shadow: none;
+	display: none;
+	opacity: 0;
+	visibility: hidden;
+  	-webkit-transiton: opacity 0.2s;
+  	-moz-transition: opacity 0.2s;
+  	-transition: opacity 0.2s;
+}
+
+ul li ul li {
+	padding: 15px 20px;
+	background: #c3c4c5;
+	display: block;
+	color: #000;
+	/* text-shadow: 0 -1px 0 #000; */
+}
+
+ul li ul li:hover {
+	background: #666;
+}
+
+ul li:hover ul {
+	display: block;
+	opacity: 1;
+	visibility: visible;
+}
+
+
+
+/* Content
+======================================= */
+
+#container {
+	width: 100%;
+}
+
+#purpose {
+	font-size: 25px;
+	font-weight: 300;
+	line-height: 1.3;
+	padding: 100px 0px;
+}
+
+#brotherhood-image, #brotherhood-header, #brotherhood-body {
+	margin-left: 160px;
+}
+
+#brotherhood-image, #professionalism-image, #service-image {
+	height: 300px;
+	background-color: black;
+}
+
+#brotherhood-header, #professionalism-header, #service-header {
+	font-size: 25px;
+	font-weight: 300;
+	letter-spacing: 0.1em;
+	margin-top: 35px;
+	margin-bottom: 25px;
+	text-transform: uppercase;
+}
+
+#brotherhood-body, #professionalism-body, #service-body {
+	font-size: 15px;
+	line-height: 1.5;
+	margin-bottom: 100px;
+}
+
+#learn-more {
+	clear: both;
+}
+
+#learn-more 
+
+#rush-button {
+	border: 2px solid #ffffff;
+	color: #9c9999;
+	font-size: 20px;
+	/*text-transform: uppercase;*/
+	font-weight: 400;
+	font-style: normal;
+	padding: 0.5em 3em;
+	display: table; /* Centers an inline element */
+	margin: auto;
+	transition: background-color .1s 0s ease-in-out, color .1s 0s ease-in-out;
+}
+
+#rush-button:hover {
+	background-color: #ffffff;
+	color: #000000;
+}
+
+#sponsor {
+	font-size: 100px;
+	margin: 200px 0;
+}
+
+#before-footer {
+	height: 90px;
+	background-color: #ecebeb;
+}
+
+#footer {
+	height: 150px;
+	width: 100%;
+}
+
+#site-address {
+	font-size: 15px;
+	padding-top: calc(75px - 19px / 2);
+}
