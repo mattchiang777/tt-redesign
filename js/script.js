@@ -19,12 +19,19 @@ $(document).ready(function() {
 
     $(window).scroll(function() {
         stickyNav();
-        console.log($(window).height());
-        console.log($(document).height());
+        var scrollTop = $(window).scrollTop();
 
         // Raise footer when near bottom of the page.
-        if ($(window).scrollTop() + $(window).height() > $(document).height() - 250) {
-            // alert("near bottom!");
-        }
+        if (scrollTop + $(window).height() > $(document).height() - 250) {
+            $("#before-footer").animate({top: "0px"}, 500);
+        };
+
+        // Fade out fist when you scroll downwards.
+        var headerTop = $("#header").offset().top;
+        if (scrollTop > headerTop) {
+            var pixelsPastHeader = scrollTop - headerTop;
+            $("#header").css({'opacity': 1 - (pixelsPastHeader/500)});
+        };
+
     });
 });
