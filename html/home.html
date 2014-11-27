@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<link href='http://fonts.googleapis.com/css?family=Lato:300,400|Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
 	<meta charset="UTF-8">
 	<title>Theta Tau Epsilon Chapter</title>
 	<link rel="stylesheet" href="../css/style.css">
@@ -20,19 +20,19 @@
 
 	<!--************************ Nav bar ************************-->
 	<div id="navbar">
-		<div id="strip" class="red"></div>
+		<div class="red strip"></div>
 		<div class="content-section">
-			<div id="logo"><img src="../img/crest.png" alt=""></div>
-			<div id="title">
-				<div id="thetatau">Theta Tau</div>
-				<div id="epsilon">Epsilon Chapter</div>
+			<div class="logo"><img src="../img/crest.png" alt=""></div>
+			<div class="title">
+				<div class="thetatau">Theta Tau</div>
+				<div class="epsilon">Epsilon Chapter</div>
 			</div>
 			<div id="dropdown-menu">
 				<ul>
-					<li>Home</li>
+					<a href="home.html"><li>Home</li></a>
 					<li>About
 						<ul>
-							<li>History</li>
+							<a href="history.html"><li>History</li></a>
 							<li>Members</li>
 							<li>Family Tree</li>
 						</ul>
@@ -44,7 +44,7 @@
 							<li>Apply</li>
 						</ul>
 					</li>
-					<li id="members-menu">Member's Menu
+					<li class="members-menu">Member's Menu
 						<ul>
 							<li>Sign In</li>
 						</ul>
@@ -54,16 +54,17 @@
 		</div>
 	</div>
 	<div id="container">
-		<div id="cover" class="block">
+		<div class="block cover">
+			<div class="cover-overlay"></div>
 			<div class="image-text image-header">Theta Tau</div>
 			<div class="image-text image-subheader">Professional Co-ed Engineering Fraternity</div>
 		</div>
-		<div id="purpose" class="body-text">
+		<div class="body-text blurb-text">
 			The purpose of Theta Tau is to develop and maintain a high standard of <br>
 			professional interest among its members, and to unite them <br>
 			in a strong bond of fraternal fellowship.
 		</div>
-		<div id="brotherhood-image" class="square clickable">
+		<div class="square clickable col1-image">
 			<img src="../img/brotherhood.jpg" alt="">
 			<span class="information-box image-text">
 				<span>Korean BBQ
@@ -71,7 +72,7 @@
 				</span>
 			</span>
 		</div>
-		<div id="professionalism-image" class="square clickable">
+		<div class="square clickable col2-image">
 			<img src="../img/professional.jpg" alt="">
 			<span class="information-box image-text">
 				<span>Career Prep
@@ -79,7 +80,7 @@
 				</span>
 			</span>
 		</div>
-		<div id="service-image" class="square clickable">
+		<div class="square clickable col3-image">
 			<img src="../img/service.jpg" alt="">
 			<span class="information-box image-text">
 				<span>Discovery Expo
@@ -87,17 +88,17 @@
 				</span>
 			</span>
 		</div>
-		<div id="brotherhood-header" class="body-text square">Brotherhood</div>
-		<div id="professionalism-header" class="body-text square">Professionalism</div>
-		<div id="service-header" class="body-text square">Service</div>
-		<div id="brotherhood-body" class="body-text square">
+		<div class="body-text square col1-header">Brotherhood</div>
+		<div class="body-text square col2-header">Professionalism</div>
+		<div class="body-text square col3-header">Service</div>
+		<div class="body-text square col1-body">
 			We forge lifelong friendships and <br>
 			a network of professional <br>
 			relationships. We foster an inviting, <br>
 			safe, and social environment in which <br>
 			our members become family.
 		</div>
-		<div id="professionalism-body" class="body-text square">
+		<div class="body-text square col2-body">
 			We develop and nurture <br>
 			engineers with strong communication, <br>
 			problem-solving, and leadership <br>
@@ -105,7 +106,7 @@
 			our profession, our community, <br>
 			and in our lives.
 		</div>
-		<div id="service-body" class="body-text square">
+		<div class="body-text square col3-body">
 			We are known for our service <br>
 			to our university and the greater <br>
 			community. Our service projects <br>
@@ -113,7 +114,8 @@
 			and personal growth for <br>
 			our members.
 		</div>
-		<div id="learn-more" class="image block">
+		<div id="learn-more" class="block cover">
+			<div class="cover-overlay"></div>
 			<div class="image-text image-header-with-button">Want to learn more?</div>
 			<div class="image-text image-subheader">Come out to Spring 2015 Rush</div>
 			<a id="rush-button" class="image-text button" href="">Rush</a>
@@ -127,7 +129,7 @@
 			<div class="social-media-icon"><img src="../img/instagram-icon.png" alt=""></div>
 		</div>
 		<div id="footer" class="red image-text">
-			<div id="site-address">Theta Tau is an ASUC sponsored student organization | cal.theta.tau@gmail.com</div>
+			<div id="site-address">&copy Theta Tau is an ASUC sponsored student organization | cal.theta.tau@gmail.com</div>
 		</div>
 	</div>
 </body>
