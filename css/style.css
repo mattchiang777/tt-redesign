@@ -6,6 +6,7 @@
 
 body {
 	margin: 0;
+	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased;
 	/* antialiased is good for light text on dark background, subpixel for vice-versa */
 	text-rendering: optimizeLegibility;
@@ -25,11 +26,6 @@ a:hover {
 img {
 	/*max-width: 100%;*/
 	max-height: 100%;
-	-webkit-transition: all 0.2s linear;
-	-moz-transition: all 0.2s linear;
-	-ms-transition: all 0.2s linear;
-	-o-transition: all 0.2s linear;
-	transition: all 0.2s linear;
 	-webkit-transition: all 0.2s linear;
 	-moz-transition: all 0.2s linear;
 	-ms-transition: all 0.2s linear;
@@ -125,34 +121,23 @@ img {
 .image-header {
 	font-size: 75px;
 	/* hayden uses 86 px */
-	padding-top: calc(250px - (90px + 55px) / 2);
-	/* Center the text in the image */
-	-webkit-animation: feature-text-anim .75s ease-in-out;
-	-moz-animation: feature-text-anim .75s ease-in-out;
-	-ms-animation: feature-text-anim .75s ease-in-out;
-	-o-animation: feature-text-anim .75s ease-in-out;
-	animation: feature-text-anim .75s ease-in-out;
+	padding-top: calc(250px - (90px + 55px) / 2); /* Center the text in the image */
 }
 
 .image-header-only {
 	font-size: 75px;
-	/* hayden uses 86 px */
 	padding-top: calc(250px - 90px / 2);
-	/* Center the text in the image */
 }
 
 .image-header-with-button {
 	font-size: 75px;
 	padding-top: calc(250px - (90px + 55px + 48px) / 2);
-	/* Center the text in the image */
 }
 
 .image-subheader {
-	font-size: 25px;
-	/* hayden uses 28 px */
+	font-size: 25px; /* hayden uses 28 px */
 	font-weight: 300;
-	padding-top: 10px;
-	/* hayden uses 20 px */
+	padding-top: 10px; /* hayden uses 20 px */
 	padding-bottom: 15px;
 	text-transform: uppercase;
 }
@@ -203,26 +188,6 @@ img {
 	-ms-opacity: 0;
 	-o-opacity: 0;
 	opacity: 0;
-	-webkit-transition: all 0.4s ease-in-out;
-	-moz-transition: all 0.4s ease-in-out;
-	-ms-transition: all 0.4s ease-in-out;
-	-o-transition: all 0.4s ease-in-out;
-	transition: all 0.4s ease-in-out;
-	-webkit-transition: all 0.4s ease-in-out;
-	-moz-transition: all 0.4s ease-in-out;
-	-ms-transition: all 0.4s ease-in-out;
-	-o-transition: all 0.4s ease-in-out;
-	transition: all 0.4s ease-in-out;
-	-webkit-transition: all 0.4s ease-in-out;
-	-moz-transition: all 0.4s ease-in-out;
-	-ms-transition: all 0.4s ease-in-out;
-	-o-transition: all 0.4s ease-in-out;
-	transition: all 0.4s ease-in-out;
-	-webkit-transition: all 0.4s ease-in-out;
-	-moz-transition: all 0.4s ease-in-out;
-	-ms-transition: all 0.4s ease-in-out;
-	-o-transition: all 0.4s ease-in-out;
-	transition: all 0.4s ease-in-out;
 	-webkit-transition: all 0.4s ease-in-out;
 	-moz-transition: all 0.4s ease-in-out;
 	-ms-transition: all 0.4s ease-in-out;
@@ -297,16 +262,6 @@ img {
 	-ms-box-shadow: 0 -5px 75px -5px black;
 	-o-box-shadow: 0 -5px 75px -5px black;
 	box-shadow: 0 -5px 75px -5px black;
-	-webkit-box-shadow: 0 -5px 75px -5px black;
-	-moz-box-shadow: 0 -5px 75px -5px black;
-	-ms-box-shadow: 0 -5px 75px -5px black;
-	-o-box-shadow: 0 -5px 75px -5px black;
-	box-shadow: 0 -5px 75px -5px black;
-	-webkit-box-shadow: 0 -5px 75px -5px black;
-	-moz-box-shadow: 0 -5px 75px -5px black;
-	-ms-box-shadow: 0 -5px 75px -5px black;
-	-o-box-shadow: 0 -5px 75px -5px black;
-	box-shadow: 0 -5px 75px -5px black;
 }
 
 .strip {
@@ -375,16 +330,6 @@ img {
 	-ms-transition: all 0.2s;
 	-o-transition: all 0.2s;
 	transition: all 0.2s;
-	-webkit-transition: all 0.2s;
-	-moz-transition: all 0.2s;
-	-ms-transition: all 0.2s;
-	-o-transition: all 0.2s;
-	transition: all 0.2s;
-	-webkit-transition: all 0.2s;
-	-moz-transition: all 0.2s;
-	-ms-transition: all 0.2s;
-	-o-transition: all 0.2s;
-	transition: all 0.2s;
 }
 
 #dropdown-menu ul li:hover {
@@ -403,30 +348,17 @@ img {
 	-ms-box-shadow: none;
 	-o-box-shadow: none;
 	box-shadow: none;
-	-webkit-box-shadow: none;
-	-moz-box-shadow: none;
-	-ms-box-shadow: none;
-	-o-box-shadow: none;
-	box-shadow: none;
-	-webkit-box-shadow: none;
-	-moz-box-shadow: none;
-	-ms-box-shadow: none;
-	-o-box-shadow: none;
-	box-shadow: none;
-	display: none;
 	-webkit-opacity: 0;
 	-moz-opacity: 0;
 	-ms-opacity: 0;
 	-o-opacity: 0;
 	opacity: 0;
 	visibility: hidden;
-	transiton: opacity 0.2s;
 	-webkit-transition: opacity 0.2s;
 	-moz-transition: opacity 0.2s;
 	-ms-transition: opacity 0.2s;
 	-o-transition: opacity 0.2s;
 	transition: opacity 0.2s;
-	-transition: opacity 0.2s;
 }
 
 #dropdown-menu ul li ul li {
@@ -480,6 +412,14 @@ img {
 .col1-header,
 .col1-body {
 	margin-left: 160px;
+}
+
+@media(min-width: 1440px) {
+	.col1-image,
+	.col1-header,
+	.col1-body {
+		margin-left: 240px;
+	}
 }
 
 .col1-image,
@@ -656,16 +596,6 @@ iframe {
 	-ms-transition: all 0.2s;
 	-o-transition: all 0.2s;
 	transition: all 0.2s;
-	-webkit-transition: all 0.2s;
-	-moz-transition: all 0.2s;
-	-ms-transition: all 0.2s;
-	-o-transition: all 0.2s;
-	transition: all 0.2s;
-	-webkit-transition: all 0.2s;
-	-moz-transition: all 0.2s;
-	-ms-transition: all 0.2s;
-	-o-transition: all 0.2s;
-	transition: all 0.2s;
 }
 
 .faq-answer {
@@ -730,9 +660,10 @@ textarea {
 
 form input[type=submit] {
 	width: 240px;
-	padding: 2em 1.5em;
+	padding: 1em 2em;
 	font-size: 25px;
-	color: #fff
+	color: #fff;
+	background-color: #771f24;
 	border: 0 none;
 	-webkit-border-radius: 0;
 	-moz-border-radius: 0;
