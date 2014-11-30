@@ -33,5 +33,25 @@ $(document).ready(function() {
             $("#header").css({'opacity': 1 - (pixelsPastHeader/500)});
         };
 
+        // var axel = $(".image-header").offset().top;
+        // if (scrollTop > axel) {
+        //     var pixelsPastHeader = scrollTop - axel;
+        //     $(".image-header").css({'opacity': 1 - (pixelsPastHeader/100)});
+        // };
+
     });
+
+    $(".faq-question").click(function() {
+        var answer = $(this).children("div");
+        if (answer.hasClass("collapsed")) {
+            $(this).children(".expand-symbol").text("–");
+            answer.show(400);
+            answer.removeClass("collapsed");
+        } else {
+            answer.addClass("collapsed");
+            answer.hide(200);
+            $(this).children(".expand-symbol").text("+");
+        }
+    })
+
 });
