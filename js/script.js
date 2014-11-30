@@ -23,7 +23,9 @@ $(document).ready(function() {
 
         // Raise footer when near bottom of the page.
         if (scrollTop + $(window).height() > $(document).height() - 250) {
-            $("#before-footer").animate({top: "0px"}, 600);
+            $("#before-footer").animate({top: "0px"}, 600, function() {
+                $(this).css("z-index", "1"); // raise z-index to make images clickable
+            });
         };
 
         // Fade out fist when you scroll downwards.
